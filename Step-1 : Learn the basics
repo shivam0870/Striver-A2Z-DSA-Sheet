@@ -89,3 +89,6 @@ public:
     return sum;
     }
 };
+
+
+7.Check For Prime
