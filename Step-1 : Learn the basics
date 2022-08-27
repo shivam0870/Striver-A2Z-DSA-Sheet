@@ -60,4 +60,19 @@ vector<long long>ans;
         
         return ans;
         
-        
+5.Armstrong Numbers
+
+class Solution {
+  public:
+    string armstrongNumber(int n){
+       int res = 0;
+       int temp = n;
+       while(n){
+           res+=pow(n%10,3);
+           n/=10;
+       }
+       if(temp == res)
+       return "Yes";
+       return "No";
+    }
+};
