@@ -129,3 +129,17 @@ int main()
   Print a[N];
   return 0;
 }
+
+Q3. Print 1 to N using recursion
+
+class Solution{
+    public:
+    //Complete this function
+    void printNos(int N)
+    {
+        if(N>1)
+        printNos(N-1);
+        cout<<N<<" ";
+    }
+};
+
