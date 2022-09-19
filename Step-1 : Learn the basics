@@ -143,3 +143,17 @@ class Solution{
     }
 };
 
+Q4. Print N to 1 using recursion
+
+void PrintReverseOrder(int N)
+{
+    
+    if (N <= 0) {
+        return;
+    }
+    else {
+        cout << N << " ";
+ 
+        
+        PrintReverseOrder(N - 1);
+    }
