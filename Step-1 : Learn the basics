@@ -109,3 +109,23 @@ class Solution{
         cout<<N<<" ";
     }
 };
+
+Q2. Print name N times using recursion
+
+#include <iostream>
+using namespace std;
+class Print {
+ 
+public:
+  Print()
+  {
+    cout << "Hello" << endl;
+  }
+};
+ 
+int main()
+{
+  int N = 5;
+  Print a[N];
+  return 0;
+}
