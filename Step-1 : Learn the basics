@@ -92,3 +92,20 @@ public:
 
 
 7.Check For Prime
+
+
+
+
+Step 1.4 --> 
+
+Q1. Understand recursion by print something N times
+class Solution{
+    public:
+    //Complete this function
+    void printNos(int N)
+    {
+        if(N>1)
+        printNos(N-1);
+        cout<<N<<" ";
+    }
+};
