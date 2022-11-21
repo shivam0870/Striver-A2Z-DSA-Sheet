@@ -204,3 +204,23 @@ int main()
     int val = search(arr,n,num);
     printf("%d",val);
 }
+
+8. Find the Union and intersection of two sorted arrays
+
+ vector<int> findUnion(int arr1[], int arr2[], int n, int m)
+    {
+        int count=0;
+        int x=n+m;
+        int C[x];
+        merge(arr1, (arr1+ n), arr2, (arr2 + m), C);;
+        sort(C,C+x);
+        set<int>s1;
+        for(int i:C){
+            s1.insert(i);
+        }
+        vector<int>vec;
+        for(auto i:s1){
+            vec.push_back(i);
+        }
+        return vec;
+    }
