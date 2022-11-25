@@ -471,3 +471,17 @@ public:
         return maxprofit;
     }
 };
+
+6. Majority Element (>n/2 times)
+class Solution {
+    public int majorityElement(int[] num) {
+       
+       if (num.length == 1) {
+		return num[0];
+	}
+ 
+	Arrays.sort(num);
+	return num[num.length / 2]; // here we are sorting tha array and sice we need to find the majority element it it sure that the middlw element is always a majority element.
+        
+    }
+}
