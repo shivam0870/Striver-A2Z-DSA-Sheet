@@ -266,3 +266,13 @@ public:
         return ans; 
     }
 };
+
+11. Find the Missing Number
+int missingNumber(int A[], int N)
+{
+   int total=N*(N+1)/2;
+
+    int sum=accumulate(A,A+N-1,0);
+
+    return total-sum;
+}
