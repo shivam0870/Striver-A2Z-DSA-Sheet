@@ -276,3 +276,21 @@ int missingNumber(int A[], int N)
 
     return total-sum;
 }
+
+12. Find the number that appears once, and other numbers twice.
+class Solution{
+public:	
+	int search(int A[], int N){
+	    unordered_map<int,int>mpp;
+	    for(int i=0; i<N; i++){
+	        mpp[A[i]]++;
+	    }
+	    int x;
+	    for(auto it : mpp){
+	        if(it.second == 1)
+	        x=it.first;
+	    }
+	    return x;
+	    
+	    
+	}
