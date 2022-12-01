@@ -188,3 +188,14 @@ class Solution
         return -1;
     }
 }
+
+8.  Search in Rotated Array 2
+     bool flag = false;
+       for(int i=0; i<N; i++){
+           if(A[i] == Key)
+           flag = true;
+       }
+       if(flag)
+       return true;
+       return false;
+    }
