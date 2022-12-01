@@ -206,3 +206,24 @@ class Solution
           x = x^arr[i];
       }
       return x;
+
+10. K-th element of two sorted Arrays
+  ArrayList<Integer> a1 = new ArrayList<Integer>();
+
+        int i;
+
+        for(i=0;i<n;i++){
+
+            a1.add(arr1[i]);
+
+        }
+
+        for(i=0;i<m;i++){
+
+            a1.add(arr2[i]);
+
+        }
+
+        Collections.sort(a1);
+
+        return a1.get(k-1);
